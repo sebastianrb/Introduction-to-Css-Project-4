@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color Builder</title>
+        <link rel="stylesheet" href="./forms.css"/>
+        <link rel="stylesheet" type="text/css" href="https://github.com/sebastianrb/web-components-MD/blob/master/components/buttons/button.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Color Builder</h1>
+            <form action="#" method="get">
+                <h3>Configure Your Color</h3>
+                <p>
+                    <label for="red">Red</label>
+                    <input type="range" id="red" name="red" min="0" max="255" step="5">
+                    <output for="red" onforminput="value = red.valueAsNumber;"></output>
+                </p>
+                <p>
+                    <label for="green">Green</label>
+                    <input type="range" id="green" name="green" min="0" max="255" step="5">
+                </p>
+                <p>
+                    <label for="blue">Blue</label>
+                    <input type="range" id="blue" name="blue" min="0" max="255" step="5">
+                </p>
+                <p>
+                    <label for="alpha">Alpha</label>
+                    <input type="range" id="alpha" name="alpha" min="0" max="1" step=".1">
+                </p>
+            </form>
+            <h3>Resultant Color</h3>
+            <div id="result-color"></div>
+        </div>
+    </body>
+</html>
