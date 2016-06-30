@@ -3,11 +3,12 @@
     <head>
         <title>Address Form</title>
         <link rel="stylesheet" href="./forms.css"/>
+        <script defer type="text/javascript" src="./js/address.js"></script>
     </head>
     <body>
         <div class="wrapper">
             <h1>An Address Form</h1>
-            <form action="#" method="get">
+            <form action="#" method="get" id="form">
                 <h3>Shipping Address</h3>
                 <p>
                     <label for="firstName">First Name</label>
@@ -287,27 +288,27 @@
                 <h3>Billing Address</h3>
                 <p>
                     <label for="firstName">First Name</label>
-                    <input type="text" id="firstName" />
+                    <input type="text" id="billingFirstName" />
                 </p>
                 <p>
                     <label for="lastName">Last Name</label>
-                    <input type="text" id="lastName" />
+                    <input type="text" id="billingLastName" />
                 </p>
                 <p>
                     <label for="streetAddress">Street Address</label>
-                    <input type="text" id="streetAddress">
+                    <input type="text" id="billingStreetAddress">
                 </p>
                 <p>
                     <label for="aptNumber">Apartment/Suite Number</label>
-                    <input type="text" id="aptNumber">
+                    <input type="text" id="billingAptNumber">
                 </p>
                  <p>
                     <label for="city">City</label>
-                    <input type="text" id="city">
+                    <input type="text" id="billingCity">
                 </p>
                 <p>
                     <label for="destination">Country</label>
-                    <select id="country">
+                    <select id="billingCountry">
                         <option value="" disabled selected="">Select Your Country</option>
                         <option value="AF">Afghanistan</option>
                         <option value="AX">Aland Islands</option>
