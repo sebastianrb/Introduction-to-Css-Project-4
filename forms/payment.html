@@ -3,7 +3,8 @@
     <head>
         <title>Payment Form</title>
         <link rel="stylesheet" href="./forms.css"/>
-        <script async type="text/javascript" src="./js/payment.js"></script>
+        <script defer type="text/javascript" src="./js/validation.js"></script>
+        <script defer type="text/javascript" src="./js/payment.js"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -24,6 +25,7 @@
                 <p>
                     <label for="expirationMonth">Expiration Month</label>
                     <select id="expirationMonth">
+                        <option disabled selected value="placeholder">Please select a month</option>
                         <option value="january">01</option>
                         <option value="february">02</option>
                         <option value="march">03</option>
@@ -41,6 +43,7 @@
                 <p>
                     <label for="expirationYear">Expiration Year</label>
                     <select id="expirationYear">
+                        <option disabled selected value="placeholder">Please select a year</option>
                         <option value="2016">2016</option>
                         <option value="2017">2017</option>
                         <option value="2018">2018</option>

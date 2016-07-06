@@ -3,19 +3,24 @@
     <head>
         <title>Scheduling Form</title>
         <link rel="stylesheet" href="./forms.css"/>
-        <script async type="text/javascript" src="./js/scheduling.js"></script>
+        <script defer type="text/javascript" src="./js/validation.js"></script>
+        <script defer type="text/javascript" src="./js/scheduling.js"></script>
     </head>
     <body>
         <div class="wrapper">
             <h1>A Scheduling Form</h1>
             <form action="#" method="get">
-                <p>
+               <!--  <p>
                     <label for="date">Appointment Date</label>
                     <input type="date" id="date" placeholder="mm/dd/yyyy">
+                </p> -->
+                <p>
+                    <label for="date">Appointment Date</label>
+                    <input type="text" id="date" placeholder="mm/dd/yyyy">
                 </p>
                 <p>
                     <label for="time">Appointment time</label>
-                    <input type="time" id="time" placeholder="HH:MM AM/PM">
+                    <input type="text" id="time" placeholder="HH:MM AM/PM">
                 </p>
                 <p>
                     <label for="timezone">Timezone</label>
